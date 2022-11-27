@@ -1,0 +1,13 @@
+{
+    "Tuple": {
+        "prefix": "Tuple",
+        "body": [
+            "Tuple ${1:tuple};\n"
+
+        ],
+        "description": [
+            "Tuples provide punchlet with a new basic type that makes working with a json document extra easy"
+        ]
+    }
+    
+}

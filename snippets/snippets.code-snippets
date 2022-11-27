@@ -1,0 +1,1264 @@
+{
+    "add(Object element)": {
+        "prefix": ".add(Object element)",
+        "body": [
+            ".add(Object element)"
+        ],
+        "description": [
+            "Tuple",
+            " Add a tuple element into a set."
+        ]
+    },
+    "append(Object element)": {
+        "prefix": ".append(Object element)",
+        "body": [
+            ".append(Object element)"
+        ],
+        "description": [
+            "Tuple",
+            " Add a abject element at the end of an array."
+        ]
+    },
+    "asArray()": {
+        "prefix": ".asArray()",
+        "body": [
+            ".asArray()"
+        ],
+        "description": [
+            "List<Tuple>",
+            " Returns an ordered list of elements if the tuple is an array or a set."
+        ]
+    },
+    "asBoolean()": {
+        "prefix": ".asBoolean()",
+        "body": [
+            ".asBoolean()"
+        ],
+        "description": [
+            "boolean",
+            " Return the leaf value as a boolean."
+        ]
+    },
+    "asBytes()": {
+        "prefix": ".asBytes()",
+        "body": [
+            ".asBytes()"
+        ],
+        "description": [
+            "byte[]",
+            " Return the leaf value as a byte array."
+        ]
+    },
+    "asCollection()": {
+        "prefix": ".asCollection()",
+        "body": [
+            ".asCollection()"
+        ],
+        "description": [
+            "Collection<Tuple>",
+            " Returns a collection of elements."
+        ]
+    },
+    "asDouble()": {
+        "prefix": ".asDouble()",
+        "body": [
+            ".asDouble()"
+        ],
+        "description": [
+            "double",
+            " Return the leaf value as a double."
+        ]
+    },
+    "asDoubleArray()": {
+        "prefix": ".asDoubleArray()",
+        "body": [
+            ".asDoubleArray()"
+        ],
+        "description": [
+            "double[]",
+            " Easily get an array of double."
+        ]
+    },
+    "asFloat()": {
+        "prefix": ".asFloat()",
+        "body": [
+            ".asFloat()"
+        ],
+        "description": [
+            "float",
+            "Return the leaf value as a float."
+        ]
+    },
+    "asGeoShape()": {
+        "prefix": ".asGeoShape()",
+        "body": [
+            ".asGeoShape()"
+        ],
+        "description": [
+            "GeoFeatureTuple",
+            "Convert the Tuple in GeoFeatureTuple if the Tuple have the attributs : type and coordinates in content"
+        ]
+    },
+    "asInt()": {
+        "prefix": ".asInt()",
+        "body": [
+            ".asInt()"
+        ],
+        "description": [
+            "int",
+            "Return the leaf value as an integer."
+        ]
+    },
+    "asLong()": {
+        "prefix": ".asLong()",
+        "body": [
+            ".asLong()"
+        ],
+        "description": [
+            "long",
+            "Return the leaf value as a long."
+        ]
+    },
+    "asLongArray()": {
+        "prefix": ".asLongArray()",
+        "body": [
+            ".asLongArray()"
+        ],
+        "description": [
+            "long[]",
+            "Easily get an array of long."
+        ]
+    },
+    "asSet()": {
+        "prefix": ".asSet()",
+        "body": [
+            ".asSet()"
+        ],
+        "description": [
+            "Set<Tuple>",
+            "Returns a set of elements."
+        ]
+    },
+    "asString()": {
+        "prefix": ".asString()",
+        "body": [
+            ".asString()"
+        ],
+        "description": [
+            "String",
+            "Return the leaf value as a String."
+        ]
+    },
+    "asString(String fmt, Object... values)": {
+        "prefix": ".asString(String fmt, Object... values)",
+        "body": [
+            ".asString(String fmt, Object... values)"
+        ],
+        "description": [
+            "String",
+            "Return the leaf value as a String."
+        ]
+    },
+    "asStringArray()": {
+        "prefix": ".asStringArray()",
+        "body": [
+            ".asStringArray()"
+        ],
+        "description": [
+            "String[]",
+            "Easily get an array of long."
+        ]
+    },
+    "attach(String key, Object value)": {
+        "prefix": ".attach(String key, Object value)",
+        "body": [
+            ".attach(String key, Object value)"
+        ],
+        "description": [
+            "void",
+            "Attach some opaque data to this tuple."
+        ]
+    },
+    "concat(String str)": {
+        "prefix": ".concat(String str)",
+        "body": [
+            ".concat(String str)"
+        ],
+        "description": [
+            "String",
+            "Concatenates the specified string to the end of this string."
+        ]
+    },
+    "contains(Object element)": {
+        "prefix": ".contains(Object element)",
+        "body": [
+            ".contains(Object element)"
+        ],
+        "description": [
+            "boolean",
+            "This method behaves differently depending on the tuple type."
+        ]
+    },
+    "containsOneOf(String[] strs)": {
+        "prefix": ".containsOneOf(String[] strs)",
+        "body": [
+            ".containsOneOf(String[] strs)"
+        ],
+        "description": [
+            "boolean",
+            "Check if this tuple contains a sub-string."
+        ]
+    },
+    "containsOneOf(Tuple resource)": {
+        "prefix": ".containsOneOf(Tuple resource)",
+        "body": [
+            ".containsOneOf(Tuple resource)"
+        ],
+        "description": [
+            "boolean",
+            "Check if this tuple contains one of several sub-string."
+        ]
+    },
+    "cutPrefix(String s)": {
+        "prefix": ".cutPrefix(String s)",
+        "body": [
+            ".cutPrefix(String s)"
+        ],
+        "description": [
+            "Tuple",
+            "Remove a matching prefix"
+        ]
+    },
+    "cutSuffix(String s)": {
+        "prefix": ".cutSuffix(String s)",
+        "body": [
+            ".cutSuffix(String s)"
+        ],
+        "description": [
+            "Tuple",
+            "Remove a matching prefix"
+        ]
+    },
+    "decodeBase64()": {
+        "prefix": ".decodeBase64()",
+        "body": [
+            ".decodeBase64()"
+        ],
+        "description": [
+            "String",
+            "Decode a string Tuple already in base64"
+        ]
+    },
+    "dump()": {
+        "prefix": ".dump()",
+        "body": [
+            ".dump()"
+        ],
+        "description": [
+            "String",
+            "Return a String representation of this tuple."
+        ]
+    },
+    "duplicate()": {
+        "prefix": ".duplicate()",
+        "body": [
+            ".duplicate()"
+        ],
+        "description": [
+            "Tuple",
+            "Clone a tuple."
+        ]
+    },
+    "elements()": {
+        "prefix": ".elements()",
+        "body": [
+            ".elements()"
+        ],
+        "description": [
+            "Tuple[]",
+            "Returns an array of elements."
+        ]
+    },
+    "empty()": {
+        "prefix": ".empty()",
+        "body": [
+            ".empty()"
+        ],
+        "description": [
+            "void",
+            "Make a tuple empty."
+        ]
+    },
+    "encodeBase64()": {
+        "prefix": ".encodeBase64()",
+        "body": [
+            ".encodeBase64()"
+        ],
+        "description": [
+            "String",
+            "Encode a string Tuple into a base64 String"
+        ]
+    },
+    "endsWith(String s)": {
+        "prefix": ".endsWith(String s)",
+        "body": [
+            ".endsWith(String s)"
+        ],
+        "description": [
+            "boolean",
+            "Return true if the String value of this tuple ends with a given suffix."
+        ]
+    },
+    "equalsOneOf(Tuple resource)": {
+        "prefix": ".equalsOneOf(Tuple resource)",
+        "body": [
+            ".equalsOneOf(Tuple resource)"
+        ],
+        "description": [
+            "boolean",
+            "Check if this tuple contains a sub-string."
+        ]
+    },
+    "exists()": {
+        "prefix": ".exists()",
+        "body": [
+            ".exists()"
+        ],
+        "description": [
+            "boolean",
+            "nan"
+        ]
+    },
+    "fromEscapedJson()": {
+        "prefix": ".fromEscapedJson()",
+        "body": [
+            ".fromEscapedJson()"
+        ],
+        "description": [
+            "Tuple",
+            "This method assumes your tuple holds a string leaf value."
+        ]
+    },
+    "get(String key)": {
+        "prefix": ".get(String key)",
+        "body": [
+            ".get(String key)"
+        ],
+        "description": [
+            "Tuple",
+            "Return a sub-tuple by key."
+        ]
+    },
+    "get(String key, long defaultValue)": {
+        "prefix": ".get(String key, long defaultValue)",
+        "body": [
+            ".get(String key, long defaultValue)"
+        ],
+        "description": [
+            "long",
+            "Retrieve a field from a tuple, and if not there return a default."
+        ]
+    },
+    "get(String key, String defaultValue)": {
+        "prefix": ".get(String key, String defaultValue)",
+        "body": [
+            ".get(String key, String defaultValue)"
+        ],
+        "description": [
+            "String",
+            "Retrieve a field from a tuple, and if not there return a default."
+        ]
+    },
+    "get(Tuple key)": {
+        "prefix": ".get(Tuple key)",
+        "body": [
+            ".get(Tuple key)"
+        ],
+        "description": [
+            "Tuple",
+            "Return a sub-tuple by key."
+        ]
+    },
+    "getAttachment(String key)": {
+        "prefix": ".getAttachment(String key)",
+        "body": [
+            ".getAttachment(String key)"
+        ],
+        "description": [
+            "Object",
+            "Retrieve an attachment by key."
+        ]
+    },
+    "getByKey(String key)": {
+        "prefix": ".getByKey(String key)",
+        "body": [
+            ".getByKey(String key)"
+        ],
+        "description": [
+            "Tuple",
+            "Return a sub-tuple by key."
+        ]
+    },
+    "getDeep(String key)": {
+        "prefix": ".getDeep(String key)",
+        "body": [
+            ".getDeep(String key)"
+        ],
+        "description": [
+            "Tuple",
+            "Return a sub-tuple by key recursively."
+        ]
+    },
+    "getDeepEs(String key)": {
+        "prefix": ".getDeepEs(String key)",
+        "body": [
+            ".getDeepEs(String key)"
+        ],
+        "description": [
+            "Tuple",
+            "Return a sub-tuple by key recursively."
+        ]
+    },
+    "getElement()": {
+        "prefix": ".getElement()",
+        "body": [
+            ".getElement()"
+        ],
+        "description": [
+            "Tuple",
+            "This method returns a new empty array element."
+        ]
+    },
+    "getElement(int index)": {
+        "prefix": ".getElement(int index)",
+        "body": [
+            ".getElement(int index)"
+        ],
+        "description": [
+            "Tuple",
+            "Retrieve the ith item from this tuple."
+        ]
+    },
+    "getEntries()": {
+        "prefix": ".getEntries()",
+        "body": [
+            ".getEntries()"
+        ],
+        "description": [
+            "List<Entry>",
+            "Returns the list of inner property key/values."
+        ]
+    },
+    "getIterator()": {
+        "prefix": ".getIterator()",
+        "body": [
+            ".getIterator()"
+        ],
+        "description": [
+            "Iterator<Object>",
+            "This method only works on array tuples."
+        ]
+    },
+    "getKeys()": {
+        "prefix": ".getKeys()",
+        "body": [
+            ".getKeys()"
+        ],
+        "description": [
+            "List<String>",
+            "Returns the list of inner property keys."
+        ]
+    },
+    "getSingleChild()": {
+        "prefix": ".getSingleChild()",
+        "body": [
+            ".getSingleChild()"
+        ],
+        "description": [
+            "Tuple",
+            "Return the single child of this tuple."
+        ]
+    },
+    "getType()": {
+        "prefix": ".getType()",
+        "body": [
+            ".getType()"
+        ],
+        "description": [
+            "String",
+            "return a String representation of the type of the value contained in a tuple."
+        ]
+    },
+    "getValues()": {
+        "prefix": ".getValues()",
+        "body": [
+            ".getValues()"
+        ],
+        "description": [
+            "Collection<Tuple>",
+            "Returns the collection of inner propery values."
+        ]
+    },
+    "hasKey(String key)": {
+        "prefix": ".hasKey(String key)",
+        "body": [
+            ".hasKey(String key)"
+        ],
+        "description": [
+            "boolean",
+            "nan"
+        ]
+    },
+    "indexOf(char ch)": {
+        "prefix": ".indexOf(char ch)",
+        "body": [
+            ".indexOf(char ch)"
+        ],
+        "description": [
+            "int",
+            "String operation only."
+        ]
+    },
+    "indexOf(char ch, int fromIndex)": {
+        "prefix": ".indexOf(char ch, int fromIndex)",
+        "body": [
+            ".indexOf(char ch, int fromIndex)"
+        ],
+        "description": [
+            "int",
+            "String operation only."
+        ]
+    },
+    "indexOf(String str)": {
+        "prefix": ".indexOf(String str)",
+        "body": [
+            ".indexOf(String str)"
+        ],
+        "description": [
+            "int",
+            "String operation only."
+        ]
+    },
+    "indexOf(String str, int fromIndex)": {
+        "prefix": ".indexOf(String str, int fromIndex)",
+        "body": [
+            ".indexOf(String str, int fromIndex)"
+        ],
+        "description": [
+            "int",
+            "String operation only."
+        ]
+    },
+    "isArray()": {
+        "prefix": ".isArray()",
+        "body": [
+            ".isArray()"
+        ],
+        "description": [
+            "boolean",
+            "Return true if this tuple contains an array value"
+        ]
+    },
+    "isBooleanLeaf()": {
+        "prefix": ".isBooleanLeaf()",
+        "body": [
+            ".isBooleanLeaf()"
+        ],
+        "description": [
+            "boolean",
+            "Check if a tuple contains a long value."
+        ]
+    },
+    "isBytesLeaf()": {
+        "prefix": ".isBytesLeaf()",
+        "body": [
+            ".isBytesLeaf()"
+        ],
+        "description": [
+            "boolean",
+            "Check if a tuple contains a Byte array value."
+        ]
+    },
+    "isDoubleLeaf()": {
+        "prefix": ".isDoubleLeaf()",
+        "body": [
+            ".isDoubleLeaf()"
+        ],
+        "description": [
+            "boolean",
+            "Check if a tuple contains a double value."
+        ]
+    },
+    "isEmpty()": {
+        "prefix": ".isEmpty()",
+        "body": [
+            ".isEmpty()"
+        ],
+        "description": [
+            "boolean",
+            "Check if a tuple contains some value."
+        ]
+    },
+    "isEquals(Object o)": {
+        "prefix": ".isEquals(Object o)",
+        "body": [
+            ".isEquals(Object o)"
+        ],
+        "description": [
+            "boolean",
+            "Check if a tuple contains a leaf value and if it is equal to a given value"
+        ]
+    },
+    "isLeaf()": {
+        "prefix": ".isLeaf()",
+        "body": [
+            ".isLeaf()"
+        ],
+        "description": [
+            "boolean",
+            " "
+        ]
+    },
+    "isLongLeaf()": {
+        "prefix": ".isLongLeaf()",
+        "body": [
+            ".isLongLeaf()"
+        ],
+        "description": [
+            "boolean",
+            "Check if a tuple contains a long value."
+        ]
+    },
+    "isRoot()": {
+        "prefix": ".isRoot()",
+        "body": [
+            ".isRoot()"
+        ],
+        "description": [
+            "boolean",
+            "Return true if this tuple is a root one."
+        ]
+    },
+    "isSet()": {
+        "prefix": ".isSet()",
+        "body": [
+            ".isSet()"
+        ],
+        "description": [
+            "boolean",
+            "Check if this tuple holds a set"
+        ]
+    },
+    "isStringLeaf()": {
+        "prefix": ".isStringLeaf()",
+        "body": [
+            ".isStringLeaf()"
+        ],
+        "description": [
+            "boolean",
+            "Check if a tuple contains a String value."
+        ]
+    },
+    "isTuple()": {
+        "prefix": ".isTuple()",
+        "body": [
+            ".isTuple()"
+        ],
+        "description": [
+            "boolean",
+            "Return true if this tuple contains a tuple value"
+        ]
+    },
+    "leafAsString()": {
+        "prefix": ".leafAsString()",
+        "body": [
+            ".leafAsString()"
+        ],
+        "description": [
+            "String",
+            "Return any leaf value as a String."
+        ]
+    },
+    "length()": {
+        "prefix": ".length()",
+        "body": [
+            ".length()"
+        ],
+        "description": [
+            "int",
+            "String API, returns the length of a String leaf Tuple."
+        ]
+    },
+    "matches(String regex)": {
+        "prefix": ".matches(String regex)",
+        "body": [
+            ".matches(String regex)"
+        ],
+        "description": [
+            "boolean",
+            "String API : Tells whether or not this string matches the given regular expression."
+        ]
+    },
+    "merge(Tuple b)": {
+        "prefix": ".merge(Tuple b)",
+        "body": [
+            ".merge(Tuple b)"
+        ],
+        "description": [
+            "Tuple",
+            "See mergeWith()."
+        ]
+    },
+    "mergeWith(Tuple b)": {
+        "prefix": ".mergeWith(Tuple b)",
+        "body": [
+            ".mergeWith(Tuple b)"
+        ],
+        "description": [
+            "Tuple",
+            "Return a merge of two Tuples A and B recursively."
+        ]
+    },
+    "putAll(Map<String, Object> map)": {
+        "prefix": ".putAll(Map<String, Object> map)",
+        "body": [
+            ".putAll(Map<String, Object> map)"
+        ],
+        "description": [
+            "Tuple",
+            "Put all the provided tuple key values in this tuple."
+        ]
+    },
+    "remove()": {
+        "prefix": ".remove()",
+        "body": [
+            ".remove()"
+        ],
+        "description": [
+            "void",
+            "Remove this tuple."
+        ]
+    },
+    "remove(String key)": {
+        "prefix": ".remove(String key)",
+        "body": [
+            ".remove(String key)"
+        ],
+        "description": [
+            "Tuple",
+            "Return and removes a sub-tuple by key."
+        ]
+    },
+    "remove(Tuple element)": {
+        "prefix": ".remove(Tuple element)",
+        "body": [
+            ".remove(Tuple element)"
+        ],
+        "description": [
+            "boolean",
+            "Set operation: remove an element from a set."
+        ]
+    },
+    "removeElement(Object value)": {
+        "prefix": ".removeElement(Object value)",
+        "body": [
+            ".removeElement(Object value)"
+        ],
+        "description": [
+            "boolean",
+            "Remove an element from an array or set."
+        ]
+    },
+    "replace(char oldChar, char newChar)": {
+        "prefix": ".replace(char oldChar, char newChar)",
+        "body": [
+            ".replace(char oldChar, char newChar)"
+        ],
+        "description": [
+            "String",
+            "Returns a string resulting from replacing all occurrences of oldChar in this string with newChar."
+        ]
+    },
+    "replaceAll(String regex, String replacement)": {
+        "prefix": ".replaceAll(String regex, String replacement)",
+        "body": [
+            ".replaceAll(String regex, String replacement)"
+        ],
+        "description": [
+            "String",
+            "Replaces each substring occurence of this string that matches the given regular expression regex with the given replacement."
+        ]
+    },
+    "replaceAllKeys(String regex, String replacement)": {
+        "prefix": ".replaceAllKeys(String regex, String replacement)",
+        "body": [
+            ".replaceAllKeys(String regex, String replacement)"
+        ],
+        "description": [
+            "Tuple",
+            "For each inner property Tuple contained in this tuple, replaces each substring occurence of its key that matches the given regular expression with the given replacement."
+        ]
+    },
+    "replaceAllKeyValues(String regex, String replacement)": {
+        "prefix": ".replaceAllKeyValues(String regex, String replacement)",
+        "body": [
+            ".replaceAllKeyValues(String regex, String replacement)"
+        ],
+        "description": [
+            "Tuple",
+            "Combines replaceAllKeys(java.lang.String, java.lang.String), and replaceAllValues(java.lang.String, java.lang.String), in one call."
+        ]
+    },
+    "replaceAllValues(String regex, String replacement)": {
+        "prefix": ".replaceAllValues(String regex, String replacement)",
+        "body": [
+            ".replaceAllValues(String regex, String replacement)"
+        ],
+        "description": [
+            "Tuple",
+            "For each inner String value contained in this tuple, replaces each substring occurence that matches the given regular expression with the given replacement."
+        ]
+    },
+    "replaceFirst(String regex, String replacement)": {
+        "prefix": ".replaceFirst(String regex, String replacement)",
+        "body": [
+            ".replaceFirst(String regex, String replacement)"
+        ],
+        "description": [
+            "String",
+            "Replaces the first substring of this string that matches the given regular expression with the given replacement."
+        ]
+    },
+    "select(String... keys)": {
+        "prefix": ".select(String... keys)",
+        "body": [
+            ".select(String... keys)"
+        ],
+        "description": [
+            "Tuple",
+            "Given a tuple, return a selection of one or several of its child."
+        ]
+    },
+    "set(Object v)": {
+        "prefix": ".set(Object v)",
+        "body": [
+            ".set(Object v)"
+        ],
+        "description": [
+            "Tuple",
+            "Assign this tuple a new leaf value"
+        ]
+    },
+    "set(String key, Object v)": {
+        "prefix": ".set(String key, Object v)",
+        "body": [
+            ".set(String key, Object v)"
+        ],
+        "description": [
+            "Tuple",
+            "Add an object as property to this tuple."
+        ]
+    },
+    "size()": {
+        "prefix": ".size()",
+        "body": [
+            ".size()"
+        ],
+        "description": [
+            "int",
+            "Return the number of fields iaddn this tuple."
+        ]
+    },
+    "skip()": {
+        "prefix": ".skip()",
+        "body": [
+            ".skip()"
+        ],
+        "description": [
+            "void",
+            "Skip a tuple value."
+        ]
+    },
+    "split(String s)": {
+        "prefix": ".split(String s)",
+        "body": [
+            ".split(String s)"
+        ],
+        "description": [
+            "String[]",
+            "Splits this string around matches of the given regular expression."
+        ]
+    },
+    "splitAsTupleArray(String s)": {
+        "prefix": ".splitAsTupleArray(String s)",
+        "body": [
+            ".splitAsTupleArray(String s)"
+        ],
+        "description": [
+            "Tuple[]",
+            "Split this string into a Tuple array of the given regular expression."
+        ]
+    },
+    "startsWith(String s)": {
+        "prefix": ".startsWith(String s)",
+        "body": [
+            ".startsWith(String s)"
+        ],
+        "description": [
+            "boolean",
+            "Split a string tuple."
+        ]
+    },
+    "substring(int beginIndex)": {
+        "prefix": ".substring(int beginIndex)",
+        "body": [
+            ".substring(int beginIndex)"
+        ],
+        "description": [
+            "String",
+            "nan"
+        ]
+    },
+    "substring(int beginIndex, int endIndex)": {
+        "prefix": ".substring(int beginIndex, int endIndex)",
+        "body": [
+            ".substring(int beginIndex, int endIndex)"
+        ],
+        "description": [
+            "String",
+            "nan"
+        ]
+    },
+    "toAsciiJson()": {
+        "prefix": ".toAsciiJson()",
+        "body": [
+            ".toAsciiJson()"
+        ],
+        "description": [
+            "String",
+            "Watchout, if you use this variant, any accent will be transformed into an ascii unicode representation."
+        ]
+    },
+    "toEscapedJson()": {
+        "prefix": ".toEscapedJson()",
+        "body": [
+            ".toEscapedJson()"
+        ],
+        "description": [
+            "String",
+            " "
+        ]
+    },
+    "toFlat()": {
+        "prefix": ".toFlat()",
+        "body": [
+            ".toFlat()"
+        ],
+        "description": [
+            "String",
+            " "
+        ]
+    },
+    "toJson()": {
+        "prefix": ".toJson()",
+        "body": [
+            ".toJson()"
+        ],
+        "description": [
+            "String",
+            "This method preserves non ascii characters."
+        ]
+    },
+    "toLowerCase()": {
+        "prefix": ".toLowerCase()",
+        "body": [
+            ".toLowerCase()"
+        ],
+        "description": [
+            "Tuple",
+            " "
+        ]
+    },
+    "toMap()": {
+        "prefix": ".toMap()",
+        "body": [
+            ".toMap()"
+        ],
+        "description": [
+            "Map<String,Object>",
+            "Convert a tuple to a Map."
+        ]
+    },
+    "toString()": {
+        "prefix": ".toString()",
+        "body": [
+            ".toString()"
+        ],
+        "description": [
+            "String",
+            "Return a String representation of the content of this tuple."
+        ]
+    },
+    "toUpperCase()": {
+        "prefix": ".toUpperCase()",
+        "body": [
+            ".toUpperCase()"
+        ],
+        "description": [
+            "Tuple",
+            " "
+        ]
+    },
+    "trim()": {
+        "prefix": ".trim()",
+        "body": [
+            ".trim()"
+        ],
+        "description": [
+            "String",
+            "Methods inherited from plain Strings."
+        ]
+    },
+    "tryBoolean()": {
+        "prefix": ".tryBoolean()",
+        "body": [
+            ".tryBoolean()"
+        ],
+        "description": [
+            "Boolean",
+            "Try to parse the given value as Boolean."
+        ]
+    },
+    "tryBoolean(boolean b)": {
+        "prefix": ".tryBoolean(boolean b)",
+        "body": [
+            ".tryBoolean(boolean b)"
+        ],
+        "description": [
+            "boolean",
+            "Try to parse as Boolean or return a default value."
+        ]
+    },
+    "tryBytes()": {
+        "prefix": ".tryBytes()",
+        "body": [
+            ".tryBytes()"
+        ],
+        "description": [
+            "byte[]",
+            "Try to parse the given value as Byte array."
+        ]
+    },
+    "tryBytes(byte[] b)": {
+        "prefix": ".tryBytes(byte[] b)",
+        "body": [
+            ".tryBytes(byte[] b)"
+        ],
+        "description": [
+            "byte[]",
+            "Try to parse as Byte array or return a default value."
+        ]
+    },
+    "tryDouble()": {
+        "prefix": ".tryDouble()",
+        "body": [
+            ".tryDouble()"
+        ],
+        "description": [
+            "Double",
+            "Try to parse the given value as Double."
+        ]
+    },
+    "tryDouble(double d)": {
+        "prefix": ".tryDouble(double d)",
+        "body": [
+            ".tryDouble(double d)"
+        ],
+        "description": [
+            "double",
+            "Try to parse as Double or return a default value."
+        ]
+    },
+    "tryIp()": {
+        "prefix": ".tryIp()",
+        "body": [
+            ".tryIp()"
+        ],
+        "description": [
+            "String",
+            "Efficiently check for valid ip address."
+        ]
+    },
+    "tryIp(String defaultValue)": {
+        "prefix": ".tryIp(String defaultValue)",
+        "body": [
+            ".tryIp(String defaultValue)"
+        ],
+        "description": [
+            "String",
+            "Efficiently check for a valid ip address."
+        ]
+    },
+    "tryIpv4()": {
+        "prefix": ".tryIpv4()",
+        "body": [
+            ".tryIpv4()"
+        ],
+        "description": [
+            "String",
+            "Efficiently check for an dot decimal ipv4 ip address."
+        ]
+    },
+    "tryIpv4(String defaultValue)": {
+        "prefix": ".tryIpv4(String defaultValue)",
+        "body": [
+            ".tryIpv4(String defaultValue)"
+        ],
+        "description": [
+            "String",
+            "Efficiently check for an dot decimal ipv4 ip address."
+        ]
+    },
+    "tryIpv6()": {
+        "prefix": ".tryIpv6()",
+        "body": [
+            ".tryIpv6()"
+        ],
+        "description": [
+            "String",
+            "Efficiently check for an dot decimal ipv6 ip address."
+        ]
+    },
+    "tryIpv6(String defaultValue)": {
+        "prefix": ".tryIpv6(String defaultValue)",
+        "body": [
+            ".tryIpv6(String defaultValue)"
+        ],
+        "description": [
+            "String",
+            "Efficiently check for an dot decimal ipv6 ip address."
+        ]
+    },
+    "tryLong()": {
+        "prefix": ".tryLong()",
+        "body": [
+            ".tryLong()"
+        ],
+        "description": [
+            "Long",
+            "Try to parse the given value as Long."
+        ]
+    },
+    "tryLong(long l)": {
+        "prefix": ".tryLong(long l)",
+        "body": [
+            ".tryLong(long l)"
+        ],
+        "description": [
+            "long",
+            "Try to parse as Long or return default."
+        ]
+	},
+	
+	"CEF": {
+		"prefix": "cef().on().into();",
+		"body": [
+			 "cef().on(${1:String}).into(${2:Tuple});",
+			 "$0"
+		],
+		"description": [
+			"The cef operator transform a valid CEF string into a punchlang tuple\n", 
+			"https://punch-1.gitbook.io/punch-doc/punchlang/api/cef"
+		]
+	},
+
+	"cidrmatch": {
+		"prefix": "cidrmatch().on().",
+		"body": [
+			 "cidrmatch(${1:String}).on(${2:String}).${3|check,into|}(${4});",
+			 "$5"
+		],
+		"description": [
+			"The cidrMatch operator lets you check that an IP address (dotted number notation) matches a subnet.",
+			"In its simplest form you can use it to only perform a check."
+		]
+	},
+
+	"cidrfirstmatch": {
+		"prefix": "cidrmatch().on().firstMatch()",
+		"body": [
+			 "cidrmatch(${1:String}).on(${2:String}).firstMatch().${3|check,into|}(${4});",
+			 "$5"
+		],
+		"description": [
+			"The cidrMatch operator lets you check that an IP address (dotted number notation) first matche a subnet.",
+			"In its simplest form you can use it to only perform a check."
+		]
+	},
+
+	"cidrRange": {
+		"prefix": "cidrRange()",
+		"body": [
+			 "cidrRange(${1:String}).columns(${2:String}).cidrField(${3:String});",
+			 "$5"
+		],
+		"description": [
+			"Using the cidrRange, you can perform efficient lookup to check if an IP address belongs to an IP range.",
+			"The CidrRangeOperator is an efficient and more powerful implementation of the CidrMatchOperator"
+		]
+	},
+
+	"Csv": {
+		"prefix": "csv().on().into();",
+		"body": [
+			 "csv(${1:String}).on(${2:String}).into(${3:Tuple});",
+			 "$4"
+		],
+		"description": [
+			"The csv operator transforms CSV strings into key value maps stored into Tuples.  Here is a simple example of handling a  \"1;2;3\" string: ", 
+			"https://punch-1.gitbook.io/punch-doc/punchlang/api/csv"
+		]
+	},
+
+	"findByKey": {
+		"prefix": "findByKey(,).on().into();",
+		"body": [
+			 "findByKey($1,$2).on($3).into($4);",
+			 "$5"
+		],
+		"description": "findByKey function"
+	},
+
+	"print": {
+		"prefix": "print()",
+		"body": [
+			 "print(${1:String or Tuple});",
+			 "$2"
+		],
+		"description": "print function"
+	},
+
+
+	"Empty": {
+		"prefix": ".isEmpty()",
+		"body": [
+			 ".isEmpty()"
+		]
+	},
+
+	"Equals": {
+		"prefix": ".isEquals()",
+		"body": [
+			 ".isEquals(${1:Object})"
+		]
+	},
+
+
+
+	"Append" :{
+		"prefix": ".append()",
+		"body"	: [
+			 ".append(${1:String})$2"
+		]
+	}
+}

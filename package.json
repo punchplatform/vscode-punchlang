@@ -1,0 +1,142 @@
+{
+	"name": "punch-visualcode-plugin",
+	"displayName": "Punchlang",
+	"description": "Punchlang Assit Code",
+	"publisher": "Punchplatform",
+	"version": "1.0.0",
+	"repository": { "type": "git", "url": "https://gitlab.thalesdigital.io/punch/parsers/punch-visualcode-plugin"},
+	"engines": {
+		"vscode": "^1.69.0"
+	},
+	"categories": [
+		"Language Packs",
+		"Formatters",
+		"Snippets",
+		"Linters", 
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:punch.Punchlet",
+		"onCommand:punch.Puncher",
+		"onLanguage:punch"
+	],
+	"main": "./dist/extension.js",
+	"icon": "/images/icon.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "punch",
+				"aliases": [
+					"Punchlang",
+					"punch"
+				],
+				"extensions": [
+					".punch"
+				],
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"light": "/images/icon.png",
+					"dark": "/images/icon.png"
+				}
+			}
+		],
+		"grammars": [
+			{
+				"language": "punch",
+				"scopeName": "source.punch",
+				"path": "./syntaxes/punch.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "punch",
+				"path": "./snippets/tuple.json"
+			},
+			{
+				"language": "punch",
+				"path": "./snippets/operators.json"
+			},
+			{
+				"language": "punch",
+				"path": "./snippets/java.json"
+			},
+			{
+				"language": "punch",
+				"path": "./snippets/server.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "punch.Punchlet",
+				"title": "Create New Punchlet"
+			},
+			{
+				"command": "punch.ClassPunchlet",
+				"title": "Create New full Punchlet Class"
+			},
+			{
+				"command": "punch.Puncher",
+				"title": "Run Puncher"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "punch.Punchlet",
+				"key": "F2"
+			},
+			{
+				"command": "punch.ClassPunchlet",
+				"key": "F4"
+			},
+			{
+				"command": "punch.Puncher",
+				"key": "F7"
+			}
+		],
+		"configuration": {
+			"title": "punch configuration",
+			"type": "object",
+			"properties": {
+				"punch-formatter.indentwidth": {
+					"type": "integer",
+					"default": 1,
+					"description": "number of spaces used for indentation"
+				},
+				"punch-formatter.pythonPath": {
+					"type": "string",
+					"default": "",
+					"description": "optional custom path to python executable (requires restarting vscode)"
+				},
+				"punch-formatter.formatterPath": {
+					"type": "string",
+					"default": "",
+					"description": "optional custom path to punch formatter (requires restarting vscode)"
+				},
+				"punch-puncher.puncherTag": {
+					"type": "string",
+					"default": "8.0-dev",
+					"description": "Puncher docker image tag"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "npm run compile-tests && npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/node": "16.x",
+		"@types/vscode": "^1.69.0",
+		"ts-loader": "^9.3.1",
+		"typescript": "^4.7.4",
+		"webpack-cli": "^4.10.0",
+		"webpack": "^5.74.0"
+	}
+}

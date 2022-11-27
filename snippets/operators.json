@@ -1,0 +1,229 @@
+{
+    "cef": {
+		"prefix": "cef().on().into()",
+		"body": [
+			 "cef().on(${1:String input}).into(${2:Tuple tuple});\n"
+		],
+		"description": [
+			"The cef operator transform a valid CEF string into a punchlang tuple\n",
+			"https://punch-1.gitbook.io/punch-doc/punchlang/api/cef"
+		]
+	},
+	"dissect": {
+		"prefix": "dissect().on().into()",
+		"body": [
+			 "dissect(${1:String pattern}).on(${2:Tuple input}).into(${3:Tuple tuple});\n"
+		],
+		"description": [
+			"The dissect function is a sort of rich split and regex based function. Refer to the",
+			"Refer to the online documentation for details",
+			"",
+			"Reference: https://punch-1.gitbook.io/punch-doc/punchlang/api/dissect"
+		]
+	},
+
+	"cidrmatch": {
+		"prefix": "cidrmatch().on().",
+		"body": [
+			 "cidrmatch(${1:String input}).on(${2:String input}).${3|check,into|}(${4});\n"
+		],
+		"description": [
+			"The cidrMatch operator lets you check that an IP address (dotted number notation)",
+			"matches a subnet.",
+			"In its simplest form you can use it to only perform a check.",
+			"Reference: https://punch-1.gitbook.io/punch-doc/punchlang/api/cidrmatch"
+		]
+	},
+
+	"cidrfirstmatch": {
+		"prefix": "cidrmatch().on().firstMatch()",
+		"body": [
+			 "cidrmatch(${1:String input}).on(${2:String input}).firstMatch().${3|check,into|}(${4});\n"
+		],
+		"description": [
+			"The cidrMatch operator lets you check that an IP address (dotted number notation) first matche a subnet.",
+			"In its simplest form you can use it to only perform a check."
+		]
+	},
+
+	"cidrRange": {
+		"prefix": "cidrRange()",
+		"body": [
+			 "cidrRange(${1:String input}).columns(${2:String input}).cidrField(${3:String input});\n"
+		],
+		"description": [
+			"Using the cidrRange, you can perform efficient lookup to check if an IP address belongs to an IP range.",
+			"The CidrRangeOperator is an efficient and more powerful implementation of the CidrMatchOperator"
+		]
+	},
+
+	"csv": {
+		"prefix": "csv().on().into()",
+		"body": [
+			 "csv(${1:String input}).on(${2:String input}).into(${3:Tuple tuple});\n"
+		],
+		"description": [
+			"The csv operator transforms CSV strings into key value maps stored into Tuples.",
+			"Here is a simple example of handling a  \"1;2;3\" string: ", 
+			"https://punch-1.gitbook.io/punch-doc/punchlang/api/csv"
+		]
+	},
+
+	"findByKey": {
+		"prefix": "findByKey(,).on().into()",
+		"body": [
+			 "findByKey($1,$2).on($3).into($4);\n"
+		],
+		"description": "findByKey function"
+	},
+
+	"Grok2":{
+		"prefix": "grok2().on().into()",
+		"body": [
+			"grok2(${1:String pattern}).on(${2:Tuple tuple}).into(${2:Tuple tuple});\n"
+	   ],
+	   "description": 
+	   "The grok2 function leverages ECS grok compliant patterns. All matches are stored in the destination tuple."
+	},
+
+	"GrokBreakMatch":{
+		"prefix": "grok2(String input).breakOnMatch(false).on()",
+		"body": [
+			"grok2(${1:String input}).breakOnMatch(false).on(${2:Tuple tuple});\n"
+	   ],
+	   "description": "The grok method requires grok patterns. The punch provides standard patterns, and you can provide your own. To use the standard grok."
+	},
+	
+	"raise(String)": {
+		"prefix": "raise(String input)",
+		"body": [
+			 "raise(${1:String input});\n"
+		],
+		"description": "Throws a PunchRuntimeException with the provided informational message"
+	},
+
+	"raise(String, Object...)": {
+		"prefix": "raise(String input, Object ...)",
+		"body": [
+			 "raise(${1:String input},${2:Object});\n"
+		],
+		"description": "This variant accept a printlf like format string, followed by the corresponding objects you want to pring"
+	},
+
+	"print": {
+		"prefix": "print()",
+		"body": [
+			 "print(${1:Object elemnt});\n"
+		],
+		"description": "print function. Avoid using this. Use debug() instead."
+	},
+	"debug": {
+		"prefix": "debug()",
+		"body": [
+			 "debug(${0:String message}, ${1:Tuple tuple});\n"
+		],
+		"description": [
+			"The debug function prints your message together with the line number,",
+			"then a flatten dump of the provided Tuple. By default debug() are inhibited",
+			"when running in a pipeline. They are activated when running unit tests."
+		]
+	},
+	"KvOn": {
+		"prefix": "kv().on().into()",
+		"body": [
+			 "kv().on(${1:Object element}).into(${2:Tuple tuple});\n"
+		],
+		"description": [
+			"The key value function extracts key value sequences from the provided string or tuple.",
+			"It has many option to set the separator, to disable or enable escaping, to infer the",
+			"match value types. Refer to the online documentation.",
+			"",
+			"Reference: https://punch-1.gitbook.io/punch-doc/punchlang/api/kv"
+		]
+	},
+
+	"Kvleft": {
+		"prefix": "kv().left().on().into()",
+		"body": [
+			 "kv().left().on(${1:Object element}).into(${2:Tuple tuple});\n"
+		],
+		"description": [
+			"The key value function extracts key value sequences from the provided string or tuple.",
+			"It has many option to set the separator, to disable or enable escaping, to infer the",
+			"match value types. Refer to the online documentation.",
+			"",
+			"The left() option is one of these to disambiguate the key value extraction.",
+			"",
+			"Reference: https://punch-1.gitbook.io/punch-doc/punchlang/api/kv"
+		]
+	},
+	"KvInfer": {
+		"prefix": "kv().infer().on().into()",
+		"body": [
+			 "kv().inferTypes().on(${1:Object element}).into(${2:Tuple tuple});\n"
+		],
+		"description": [
+			"The key value function extracts key value sequences from the provided string or tuple.",
+			"It has many option to set the separator, to disable or enable escaping, to infer the",
+			"match value types. Refer to the online documentation.",
+			"",
+			"The inferType() make the kv function guess the target type of values. Without it",
+			"only string values are generated.",
+			"",
+			"Reference: https://punch-1.gitbook.io/punch-doc/punchlang/api/kv"
+		]
+	},
+
+	"KvReplace": {
+		"prefix": "kv().replace().on().into()",
+		"body": [
+			 "kv().${1|replaceAllKeys,replaceAllValues,replaceAllKeyValues|}(${3:String input}, ${4:String input}).on(${5:Object element}).into(${6:Tuple tuple});\n"
+		],
+		"description": [
+			"The key value function extracts key value sequences from the provided string or tuple.",
+			"It has many option to set the separator, to disable or enable escaping, to infer the",
+			"match value types. Refer to the online documentation.",
+			"",
+			"The replace options les you () make the kv function guess the target type of values. Without it",
+			"only string values are generated.",
+			"",
+			"Reference: https://punch-1.gitbook.io/punch-doc/punchlang/api/kv"
+		]
+	},
+	"move": {
+		"prefix": "move().into()",
+		"body": [
+			 "move(${1:Tuple src}).into(${2:Tuple dst});\n"
+		],
+		"description": [
+			"Move a tuple to another destination. This moves the complete subtree.", 
+			"",
+			"https://punch-1.gitbook.io/punch-doc/punchlang/api/move"
+		]
+	},
+	"raise": {
+		"prefix": "raise()",
+		"body": [
+			 "raise(\"error message\");\n"
+		],
+		"description": [
+			"Raise a runtime exception. This interrupts your punchlets and will", 
+			"result in an error tuple being generated and routed to error queues or indexes",
+			"depending on the platform pipeline strategy",
+			"",
+			"https://punch-1.gitbook.io/punch-doc/punchlang/api/raise"
+		]
+	},
+	"toflat": {
+		"prefix": "toFlatTuple()",
+		"body": [
+			 "toFlatTuple(${1:Tuple tuple}).into(${2:Tuple flat});\n"
+		],
+		"description": [
+			"Flatten a tuple.",
+			"",
+			"https://punch-1.gitbook.io/punch-doc/punchlang/api/toflattuple"
+		]
+	},
+
+}

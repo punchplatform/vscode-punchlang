@@ -1,0 +1,91 @@
+{
+	"tryBoolean": {
+		"prefix": ["tryBoolean"],
+		"body": [
+			"tryBoolean(${1:Tuple tuple})"
+		],
+		"description": 
+			"best effort attempt to convert the provided Tuple to a boolean."
+	},
+	"tryDouble": {
+		"prefix": ["tryDouble"],
+		"body": [
+			"tryDouble(${1:Tuple tuple})"
+		],
+		"description": "try to convert the provided Tuple to double."
+	},
+	"tryIp": {
+		"prefix": ["tryIp"],
+		"body": [
+			"tryIp(${1:Tuple tuple})"
+		],
+		"description": "check that the provided Tuple is an IP value."
+	},
+	"tryIpv4": {
+		"prefix": ["tryIpv4"],
+		"body": [
+			"tryIpv4(${1:Tuple tuple})"
+		],
+		"description": "check that the provided Tuple is an IP value."
+	},
+	"tryIpv6": {
+		"prefix": ["tryIpv6"],
+		"body": [
+			"tryIpv6(${1:Tuple tuple})"
+		],
+		"description": "check that the provided Tuple is an IP value."
+	},
+	"tryLong": {
+		"prefix": ["tryLong"],
+		"body": [
+			"tryLong(${1:Tuple tuple})"
+		],
+		"description": "try to convert the provided Tuple to a long. \nIt has no effect if the conversion is not possible."
+	},
+	"tryEpochMs": {
+		"prefix": ["tryEpochMs"],
+		"body": [
+			"tryEpochMs(${1:Tuple tuple})"
+		],
+		"description": "try to convert the provided Tuple to an epoch timestamp in millisecond. This function accomodates input most date formats. It has no effect if the conversion is not possible."
+	},
+	"tryIsoDate": {
+		"prefix": ["tryIsoDate"],
+		"body": [
+			"tryIsoDate(${1:Tuple tuple})"
+		],
+		"description": "try to convert the provided Tuple to iso date format. This function accomodates most input date formats. It has no effect if the conversion is not possible."
+	},
+	"trycatch": {
+		"prefix": "try catch",
+		"body": [
+			"try {",
+			"\t$1",
+			"} catch (${2:Exception} ${3:e}) {",
+			"\t$4//${0:TODO}: handle exception",
+			"}"
+		],
+		"description": "try/catch block"
+	},
+	"tuple": {
+		"prefix": "Tuple",
+		"body": [
+			"Tuple ${0:tmp}"
+		],
+		"description": "Declare a new transient tuple."
+	},
+	"Switch Statement": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:key}) {",
+			"\tcase ${2:value}:",
+			"\t\t$0",
+			"\t\tbreak;",
+			"",
+			"\tdefault:",
+			"\t\tbreak;",
+			"}"
+		],
+		"description": "Switch Statement"
+	}
+}
