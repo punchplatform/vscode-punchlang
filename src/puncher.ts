@@ -26,11 +26,12 @@ export function runPuncher(filePath: any) {
 
         // Tranform file path to get work directory and file name 
         filePath = filePath.toString();
-        let folderPath = filePath.substring(0, filePath.lastIndexOf('/'));
+        let rootPath = filePath.substring(0, filePath.lastIndexOf('/src/main/punchlang'));
+        let folderPath = filePath.substring(filePath.lastIndexOf('/src/main/punchlang'), filePath.lastIndexOf('/'));
         let filename = filePath.substring(filePath.lastIndexOf('/') + 1);
 
         // Build command
-        let command = docker + ' ' + folderPath + ':/workdir/ ghcr.io/punchplatform/puncher:' + tag +  ' -p /workdir/' + filename;
+        let command = docker + ' ' + rootPath + ':/workdir/ ghcr.io/punchplatform/puncher:' + tag +  ' -p /workdir/' + folderPath+'/'+filename;
 
         terminal.show()
 
