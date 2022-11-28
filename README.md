@@ -8,8 +8,8 @@ Provide punchlang code assistance to visual code editor.
    
    ```bash
    cd $HOME/.vscode/extensions/
-   git clone https://gitlab.thalesdigital.io/punch/parsers/punch-visualcode-plugin.git
-   cd punch-visualcode-plugin
+   git clone https://github.com/punchplatform/vscode-punchlang.git
+   cd vscode-punchlang
    npm install
    npm run vscode:prepublish
    ```
@@ -23,9 +23,8 @@ Provide punchlang code assistance to visual code editor.
 1. Update the extensiona
    
    ```bash
-   cd $HOME/.vscode/extensions/
+   cd $HOME/.vscode/extensions/vscode-punchlang
    git pull
-   cd punch-visualcode-plugin
    npm install
    npm run vscode:prepublish
    ```
@@ -40,9 +39,9 @@ Provide punchlang code assistance to visual code editor.
 
 - nodejs
 
-- Python >= 3.6.8 ([Properly install Python using Pyenv](https://gitlab.thalesdigital.io/punch/product/punch/-/blob/8.0/documentation/docs/Common/Contribution_Guide/Developper/Setup/Setup_Python.md))
+- Python >= 3.6.8
 
-- VsCode >= 1.69.2 ([Properly install VsCode](https://code.visualstudio.com/download))
+- VsCode >= 1.69.2
 
 - Remove all settings already assign to punch files (File/Preferences/Settings)
 
