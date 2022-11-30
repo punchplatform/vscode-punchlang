@@ -1,6 +1,6 @@
 # Welcome to punch-visualcode-plugin
 
-Provide punchlang code assistance to visual code editor.
+Provide punchlang code assistance to Visual Studio Code editor.
 
 ## Quick Start
 
@@ -20,7 +20,7 @@ Provide punchlang code assistance to visual code editor.
 
 ## Update
 
-1. Update the extensiona
+1. Update the extension
    
    ```bash
    cd $HOME/.vscode/extensions/vscode-punchlang
@@ -31,7 +31,7 @@ Provide punchlang code assistance to visual code editor.
 
 2. You may need to reopen your VSCode
 
-3. Extension is activated when you first access a Punch file
+3. Extension is activated when you first access a Punch file (`.punch`)
 
 ## Prerequisites
 
